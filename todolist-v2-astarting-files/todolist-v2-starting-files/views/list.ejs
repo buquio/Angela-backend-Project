@@ -1,0 +1,69 @@
+<!-- EXAMPLE 1,2,3,4-->
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1> <%= kindOfDay %> </h1> 
+
+    EXAMPLE 4
+   <% if (kindOfDay ==="Thursday"){   %>
+      <h1 style="color:purple"><%= kindOfDay% To-Do List></h1>
+    <%}else{  %>
+      <h1 style="color:blue"><%=kindOfDay% To-Do List></h1>
+
+    <%}%>
+
+  </body>
+</html> -->
+
+EXAMPLE 5
+!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1> <%= kindOfDay %> </h1> 
+<ul>
+  <li>Buy food</li>
+  <li>Cook food</li>
+  <li>Eat food</li>
+  <li><%= newListItem %></li>
+
+</ul>
+
+<form class="item" action="/" method="post">
+  <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+  <button type="submit" name="list">+</button>
+</form>
+
+
+  </body>
+  </html> -->
+  
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+
+    <h1> <%= listTitle %> </h1>
+  </div>
+
+  <div class="box">
+    <% for (let i=0; i<newListItems.length; i++) { %>
+      <div class="item">
+        <input type="checkbox">
+        <p><%=  newListItems[i]  %></p>
+      </div>
+      <% } %>
+
+      <form class="item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="list">+</button>
+      </form>
+  </div>
+
+<%- include("footer") -%>

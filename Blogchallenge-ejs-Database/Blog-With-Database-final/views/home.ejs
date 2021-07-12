@@ -1,0 +1,28 @@
+
+<%- include("partials/header"); -%>
+
+    <h1>Home</h1>
+    <!-- takes not an eternal value  -->
+    <p> <%= startingContent %> </p> 
+    <!-- takes an eternal value  -->
+
+
+  <%  posts.forEach(function(post){ %>
+    <!-- takes an javascript value  -->
+
+
+    <h1><%=post.title%></h1>
+    <!-- takes an eternal value  -->
+
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%> 
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p> 
+    <!-- show only 100 character -->
+
+
+
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>

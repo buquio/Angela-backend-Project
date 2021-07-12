@@ -1,0 +1,46 @@
+Step 0 - Download the Starting Files
+To start the challenge, first head over to the Course Resources List and under the Blog with a Database Challenge section, you can download the starting files.
+
+https://www.appbrewery.co/p/web-development-course-resources
+
+//////
+Step 1 - Save Composed Posts with MongoDB
+Goal: You should be able to go to the compose page and add a new post which will be added to your database as a new document.
+
+Verify by going into the mongo shell and find all posts.
+
+/////
+Step 2 - Get the Home Page to Render the Posts
+Goal: When you go to localhost:3000 you should see the posts you created in the compose page.
+
+/////
+Step 3 - Fix the bug
+At the moment, when you compose a post and redirect to the root route, sometimes the post is not yet saved and doesn’t show up on the home page.
+
+Goal: Add a callback to the save method to only redirect to the home page once save is complete with no errors.
+
+//////
+Step 4 - Render the correct blog post based on post _id
+Goal: When you click on Read More, it should take you to the post.ejs page rendering the correct post using the post._id
+
+
+
+//////
+Completed Blog with Database Solution
+You'll find the completed code for our blog with a database on the Course Resources List. Head over there and download the project, if you need to debug your code or see how I did it.
+
+https://www.appbrewery.co/p/web-development-course-resources/
+
+Resources for this
+
+/////xxxxx
+How to Review the Source Code
+Hey!
+
+If you would like to see the completed source code for each lesson, be sure to head over to the GitHub repository for this module and git clone the repo.
+
+Then you can use git log to see all the commits. You should see something like this:
+
+commit 98ce8958d78eadfeb37cc7fb95c41cadf86fbd4f
+
+
