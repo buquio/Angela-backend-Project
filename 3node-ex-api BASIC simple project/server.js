@@ -92,8 +92,7 @@ router.put('/:id', function (req, res) {
         data.splice(targetIndex, 1, updated);
 
         // return with status 204
-        // success status response code 204 indicates
-        // that the request has succeeded
+        // success status response code 204 indicates  succeeded
         res.sendStatus(204);
     } else {
         res.sendStatus(404);
