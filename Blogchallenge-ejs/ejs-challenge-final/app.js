@@ -43,7 +43,7 @@ app.get("/compose", function(req, res){
     content: req.body.postBody
   };
 
-  posts.push(post); //push to posts[] OR save to database
+  posts.push(post); //push to posts[] OR Posts page(if there is) OR save to database
 
   res.redirect("/");
 

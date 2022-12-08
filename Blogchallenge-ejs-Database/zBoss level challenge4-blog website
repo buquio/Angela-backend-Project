@@ -15,7 +15,7 @@ Goal: When you go to localhost:3000 you should see the posts you created in the 
 
 /////
 Step 3 - Fix the bug
-At the moment, when you compose a post and redirect to the root route, sometimes the post is not yet saved and doesn’t show up on the home page.
+At the moment, when you compose a post and redirect to the root/home route, sometimes the post is not yet saved and doesn’t show up on the home page.
 
 Goal: Add a callback to the save method to only redirect to the home page once save is complete with no errors.
 
