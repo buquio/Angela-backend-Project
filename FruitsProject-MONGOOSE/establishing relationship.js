@@ -29,6 +29,20 @@ fruit.save();
 // apple.save()
 console.log('fruit')
 
+
+// add fruit 
+const pineapple = new Fruit({
+    name: "Pineapple",
+    score: 9,
+    review: "Delicious friut."
+});
+
+pineapple.save();
+// run node app.js in terminal OR db.people.find() inside mongo shell
+// run db.fruit.find() inside mongo shell u will find same fruit id
+//
+
+
 ///////////////////
 const personSchema = new mongoose.Schema ({
     name: String,
@@ -39,13 +53,6 @@ const personSchema = new mongoose.Schema ({
 
 const Person = mongoose.model("Person", personSchema);
 
-const pineapple = new Fruit({
-        name: "Pineapple",
-        score: 9,
-        review: "Delicious friut."
-    });
-
-    pineapple.save();
 
     const person = new Person({
         name: "Amy",
@@ -56,8 +63,8 @@ const pineapple = new Fruit({
     });
     
     // person.save();
-    console.log('person')
-// run node app.js in terminal OR db.people.find() inside mongo shell
+    console.log('person') 
+    // run node app.js in terminal OR db.people.find() inside mongo shell
 // run db.fruit.find() inside mongo shell u will find same fruit id
 //
     

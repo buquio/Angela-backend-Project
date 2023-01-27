@@ -46,8 +46,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html");//HTTP
 });
+//?????????how do i test this on postman
 
-// SENDING users POST request
+
+// SENDING users POST request to api so as to gett response 
 app.post("/", function(req,  res){
     console.log(req.body)
     const query = req.body.cityName;
@@ -76,6 +78,9 @@ app.post("/", function(req,  res){
         });
     });
 })
+
+//?????????how do i test this on postman
+
     app.listen(3000, function() {
         console.log("Server is running on port 3000");
     

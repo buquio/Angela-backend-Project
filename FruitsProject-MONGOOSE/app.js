@@ -107,13 +107,14 @@ fruits.forEach(function(fruit){
 
 //UPDATEONE by id
 // update peach name 
-Fruit.updateOne([_id:"5bc0854dd6ec7adjg55fds7", {name:"Peach"}, function(err) {
+Fruit.updateOne({_id:"5bc0854dd6ec7adjg55fds7"}, {name:"Peach"}, function(err) {
         if (err) {
             console.log(err);
             }else {
                 console.log("Successfully update the peach docs")
             }   
-    });
+    }
+);
 
 
     // DELETE by name

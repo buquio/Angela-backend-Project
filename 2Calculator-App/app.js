@@ -28,18 +28,30 @@ app.get("/bmicalculator", function(req, res){
 
 })
 
+
+//the calculate bmi-button will perform this function below
+//first do npm install
+// run  node app.js  
+//open the /bmicalculator.html  but change the port to 3000 instead of the 5500
+//input the weight and height
+//click calculate-button 
+// see your result in the browser --"Your bmi is 9"
 app.post("/bmicalculator", function(req, res){
     // console.log(req.body);
 var weight = parseFloat(req.body.weight);
 var height = parseFloat(req.body.height);
 
 var bmi = weight/(height*height)
+// var bmi = 76/(2*2)
+
 
 res.send("Your bmi is " + bmi);
 
 //   res.send("Thanks for posting");  
 });
 
+
+///???????how can i post on postman &see my result
 
 app.listen(3000, function() {
     console.log("Server is running on port 3000");

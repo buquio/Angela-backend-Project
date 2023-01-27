@@ -37,7 +37,7 @@ export class JobSearch {
       .then(({ results }) => {
         this.stopLoading();
         return results
-          .map(job => jobTemplate(job, this.currencySymbol))
+          .map(job => jobTemplate(job, this.currencySymbol)) //format for template 
           .join('');
       })
       .then(jobs => this.resultsContainer.innerHTML = jobs)
