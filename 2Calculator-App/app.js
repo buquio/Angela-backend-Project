@@ -20,6 +20,13 @@ res.send("The result of the calculation is " + result);
 
 //   res.send("Thanks for posting");  
 });
+//cd into the particular project folder
+//first do npm install
+//run  node app.js  
+//open the /index.html  in live saver but change the port to 3000 instead of the 5500
+//input the num1 and num2
+//click calculate-button 
+//see your result in the browser --"The result of the calculation is " + result"
 
 
 // BMI CALCULATOR  http://localhost:3000/bmicalculator
@@ -28,11 +35,11 @@ app.get("/bmicalculator", function(req, res){
 
 })
 
-
+//cd into the particular project folder
 //the calculate bmi-button will perform this function below
 //first do npm install
 // run  node app.js  
-//open the /bmicalculator.html  but change the port to 3000 instead of the 5500
+//open the /bmicalculator.html in live saver but change the port to 3000 instead of the 5500
 //input the weight and height
 //click calculate-button 
 // see your result in the browser --"Your bmi is 9"
