@@ -18,7 +18,6 @@ var result = num1 + num2;
 
 res.send("The result of the calculation is " + result);
 
-//   res.send("Thanks for posting");  
 });
 //cd into the particular project folder
 //first do npm install
@@ -50,15 +49,14 @@ var height = parseFloat(req.body.height);
 
 var bmi = weight/(height*height)
 // var bmi = 76/(2*2)
+///???????how can i post on postman &see my result
 
 
 res.send("Your bmi is " + bmi);
-
-//   res.send("Thanks for posting");  
+ 
 });
 
 
-///???????how can i post on postman &see my result
 
 app.listen(3000, function() {
     console.log("Server is running on port 3000");

@@ -21,6 +21,7 @@
 // }
 // run().catch(console.dir);
 
+// HOW DO I RUN THIS????????????? POSTMAN OR MONGO SHELL
 
 //////////////////////////////
 // MONGODB NATIVE DRIVER VERSION 4.0

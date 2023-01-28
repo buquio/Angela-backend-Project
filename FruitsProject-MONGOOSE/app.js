@@ -15,6 +15,7 @@ const fruitSchema = new mongoose.Schema ({
 //     review: String
 // });
 
+// HOW DO I RUN THIS????????????? POSTMAN OR MONGO SHELL
 
 //CREATE/POST/INSERT --NEW FRUIT
 const Fruit = mongoose.model("Fruit", fruitSchema);//fruits collection

@@ -11,8 +11,6 @@ let data = [
     { id: 5, title: 'Have some dinner', order: 5, completed: false, createdOn: new Date() },
 ];
 
-// HTTP methods ↓↓ starts here.
-
 // READ
 // this api end-point of an API returns JSON data array
 router.get('/', function (req, res) {
@@ -34,6 +32,31 @@ router.get('/:id', function (req, res) {
         res.sendStatus(404);
     }
 });
+
+
+// npm install
+// npm start  ??????????
+// ???To test this API — Open your web browser and enter this URL → localhost:3000
+
+// /or
+/* Now, run npm start if your server is not running. This time we have three end-points:
+→ localhost:3000 (Default)
+→ localhost:3000/items (Returns all objects)
+→ localhost:3000/items/1 (Returns single object of id=1)
+ */
+//Testing API  endpoints with Postman
+//1 Enter GET request URL ( localhost:3000/items) or localhost:3000/items/1
+//2 HTTP POST Request (to Add data)
+// -Before sending the POST request:
+// * Click “body” tab (1).
+// * Select “raw” from the radio box (2).
+// * Select JSON from the select box (3) — As we are sending JSON data.
+// * Add request data to the “body” of the request (4).
+//3 PUT request: (EVERYTHING IS SAME AS “POST” REQUEST),just change post to put 
+
+// “You can check item you updated by sending a get request” 
+//4 To send a DELETE request, change the request url to address a specific item id like this localhost:3000/items/3
+// → And select DELETE as http verb.
 
 // CREATE
 // this api end-point add new object to item list

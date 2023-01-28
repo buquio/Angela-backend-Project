@@ -5,7 +5,7 @@ const https = require("http"); //posting to external API
 
 
 const app = express();
-
+// is this a frontend+backend project???????????
 // https://www.youtube.com/watch?v=tZKYiiQP57I
 
 // app.use(express.static("public"));  //use this when you connect to heroku
